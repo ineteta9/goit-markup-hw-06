@@ -28,7 +28,7 @@
       </nav>
       <ul class="contakt">
         <li>
-          <a href="mailto:info@devstudio.com" class="link list"><svg class="icon-mail" width="16" height="12">
+          <a href="mailto:info@devstudio.com" class="list"><svg class="icon-mail" width="16" height="12">
               <use href="./icons/symbol-defs.svg#icon-envelope"></use>
             </svg>info@devstudio.com</a>
         </li>
@@ -49,7 +49,7 @@
           <div class="modal">
             <button class="btn-close" data-modal-close>
               <svg class="close-icon">
-                <use href="./images/icons.svg#icon-close"></use>
+                <use href="./icons/symbol-defs.svg#icon-cancel-circle"></use>
               </svg>
             </button>
           </div>
@@ -268,32 +268,32 @@
         <h2 class="clients-title">Постоянные клиенты</h2>
         <ul class="clients-item">
           <li class="client-item-list">
-            <a href="" class="client-style"><svg class="client-item-icon" width="106" height="60">
+            <a href="" class="clients-style"><svg class="client-item-icon" width="106" height="60">
                 <use href="./icons/symbol-defs.svg#icon-Logo1"></use>
               </svg></a>
           </li>
           <li class="client-item-list">
-            <a href="" class="client-style"><svg class="client-item-icon" width="106" height="60">
+            <a href="" class="clients-style"><svg class="client-item-icon" width="106" height="60">
                 <use href="./icons/symbol-defs.svg#icon-Logo2"></use>
               </svg></a>
           </li>
           <li class="client-item-list">
-            <a href="" class="client-style"><svg class="client-item-icon" width="106" height="60">
+            <a href="" class="clients-style"><svg class="client-item-icon" width="106" height="60">
                 <use href="./icons/symbol-defs.svg#icon-Logo3"></use>
               </svg></a>
           </li>
           <li class="client-item-list">
-            <a href="" class="client-style"><svg class="client-item-icon" width="106" height="60">
+            <a href="" class="clients-style"><svg class="client-item-icon" width="106" height="60">
                 <use href="./icons/symbol-defs.svg#icon-Logo4"></use>
               </svg></a>
           </li>
           <li class="client-item-list">
-            <a href="" class="client-style"><svg class="client-item-icon" width="106" height="60">
+            <a href="" class="clients-style"><svg class="client-item-icon" width="106" height="60">
                 <use href="./icons/symbol-defs.svg#icon-Logo5"></use>
               </svg></a>
           </li>
           <li class="client-item-list">
-            <a href="" class="client-style"><svg class="client-item-icon" width="106" height="60">
+            <a href="" class="clients-style"><svg class="client-item-icon" width="106" height="60">
                 <use href="./icons/symbol-defs.svg#icon-Logo6"></use>
               </svg></a>
           </li>
@@ -341,12 +341,15 @@
       </div>
       <div class="active">
         <p class="social-text">Подпишитесь на рассылку</p>
-        <ul class="active-link">
-          <li class="active-link-list">
-            </li>
-          <li class="active-link-list">
-            <button type="button" class="btn">Подписаться</button>
-          </li>
+        <div class="active-thumb">
+          <input type="email" class="input-footer" name="email" placeholder="E-mail" autocomplete="on">
+          <button type="submit" class="btn-footer">
+            <span>Подписаться</span>
+            <svg>
+              <use href="./icons/symbol-defs.svg#icon-send">
+              </use>
+            </svg></button>
+        </div>
       </div>
     </div>
   </footer>

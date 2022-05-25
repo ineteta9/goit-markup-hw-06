@@ -150,7 +150,7 @@ ul {padding: 0;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.current::after {
+.link::after {
   content: '';
   display: block;
   height: 4px;
@@ -388,7 +388,7 @@ p {margin: 0;}
   content: '';
   left: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: 0;
   width: 100%;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);}
@@ -396,7 +396,7 @@ p {margin: 0;}
 .about-text {
   position: absolute;
   display: flex;
-  z-index: 2;
+  z-index: 1;
   padding-top: 30px;
   padding-bottom: 30px;
   font-weight: 700;
@@ -453,9 +453,6 @@ p {margin: 0;}
   background: var(--white-color);
   padding-top: var(--card-set-gap);
   padding-bottom: var(--card-set-gap);
-  border: 1px solid #eeeeee;
-  border-top: 0;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;}
 
 /*.icon-link {
@@ -537,13 +534,12 @@ padding-right: 32px;}
   justify-content: center;}
 
 .clients-style {
-  display: flex;
-  justify-content: center;
-  align-content: center;
   width: 100%;
   height: 100%;
-  fill: var(--icon-color);
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
 
 .client-item-list {
   width: 170px;
@@ -557,10 +553,6 @@ padding-right: 32px;}
   margin-right: var(--card-set-gap);}
 
 .client-item-icon {
-  display: flex;
-  align-items: center;
-  background-repeat: no-repeat;
-  align-items: center;
   fill: var(--icon-color);
 }
 
@@ -698,45 +690,16 @@ a {
   fill: var(--white-color);
 }
 
-/*_______
-________
-_______
-<div class="active">
-<form class="active-footer">
-<p class="social-text">Подпишитесь на рассылку</p>
-<div class="active-thumb">
-<input type="email" class="input-footer" name="email" placeholder="E-mail" autocomplete="on">
-<button type="submit" class="btn-footer">
-<span>Подписаться</span>
-<svg>
-<use href="./images/icons.svg#icon-send">
-</use></svg></button></div></form></div>
+/*_______FOOTER______"active"*/
 .active {
   width: 570px;
   height: 86px;
   margin-left: 93px;
 }
 
-/*.active .btn {
-  margin-top: var(--card-set-gap);
-  background: var(--accent-color);
-  color: var(--white-color);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  text-align: center;
-  letter-spacing: 0.06em;
-  padding-left: 29px;
-  padding-right: 62px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border: none;
-  border-radius: 4px;
-}*/
-/*
 .active-thumb {
   display: flex;
+  margin-top: 20px;
 }
 
 .btn-footer {
@@ -758,21 +721,21 @@ _______
   font-size: 16px;
   line-height: 1, 9;
   letter-spacing: 0.06em;
-  color: var(--background-color);
+  color: var(--white-color);
 }
 .btn-footer>svg {
   width: 24px;
   height: 24px;
-  fill: var(--background-color);
+  fill: var(--white-color);
 }
 .input-footer {
   display: inline-block;
   margin-right: 12px;
-  padding: 16px;
+  padding-left: 16px;
   width: 358px;
   height: 50px;
-  color: var(--background-color);
-  background-color: var(--footer-color);
+  color: var(--home-color);
+  background-color: var(--home-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -783,7 +746,7 @@ _______
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-}*/
+}
 
 /* ______________________________ Портфолио__________________________ */
 .link-portf {
@@ -992,6 +955,7 @@ overflow: hidden;
   width: 528px;
   height: 581px;
   background: #ffffff;
+  z-index: 3;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
