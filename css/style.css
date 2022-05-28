@@ -998,7 +998,7 @@ overflow: hidden;
 .backdrop-button:focus {
   fill: var(--accent-color);
 }
-.modal-title{
+.modal-title {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -1012,6 +1012,7 @@ overflow: hidden;
   display: flex;
   flex-direction: column;
 }
+
 .form-field {
   position: relative;
   display: flex;
@@ -1051,13 +1052,10 @@ overflow: hidden;
 .form-input:focus+.form-icon {
   fill: var(--accent-color);
 }
-
-.form-field-textarea {
-  display: flex;
-  flex-direction: column;
+/*.form-field.textarea {
   margin-bottom: 20px;
-}
-.textarea {
+}*/
+/*.form-input.comment {
   resize: none;
   padding: 16px;
   width: 100%;
@@ -1065,9 +1063,8 @@ overflow: hidden;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-}
-
-.textarea::placeholder {
+}*/
+/*.form-input.comment::placeholder {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -1075,13 +1072,12 @@ overflow: hidden;
   line-height: 16px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-}
-.container-btm {
+}*/
+
+/*.form-field.checkbox {
+  position: relative;
   display: flex;
-  justify-content: center;
-}
-.form-field-checkbox {
-  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: baseline;
   margin-bottom: 30px;
@@ -1092,6 +1088,56 @@ overflow: hidden;
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: #757575;
+  }*/
+/*.form-field.checkbox>input {
+  display: inline-block;
+  margin-right: 8px;
+  width: 16px;
+  height: 15px;
+  color: var(--title-text-color);
+}*/
+
+/*.checkbox-icon {
+  position: absolute;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  left: 10px;
+  top: 4px;
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+}*/
+/*.label.agree {
+  margin-bottom: 0;
+  padding-left: 35px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}*/
+/*
+.form-input.visually-hidden:checked+.checkbox-icon {
+  background-image: url(../images/checked.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--accent-color);
+}
+
+.form-field.checkbox a {
+  text-decoration: underline;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}*/
+
+
+
+
+
+
+/*
 }
 .checkbox {
   position: absolute;
@@ -1122,7 +1168,7 @@ overflow: hidden;
 }
 .checkbox:checked+.checkbox-icon {
   background-image: url(../images/icon-check.svg);
-}
+}*/
 .label.agree {
   margin-bottom: 0;
   padding-left: 35px;
@@ -1137,7 +1183,7 @@ overflow: hidden;
   background-origin: border-box;
   border-color: var(--accent-color);
 }
-.form-field-checkbox a {
+.form-field.checkbox a {
   text-decoration: underline;
   font-weight: 400;
   font-size: 14px;
