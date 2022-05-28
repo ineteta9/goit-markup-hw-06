@@ -870,13 +870,6 @@ a {
   letter-spacing: 0.03em;
 }
 
-/*.elements-link:hover .element-title,
-.elements-link:focus .element-title, 
-.elements-link:hover .text,
-.elements-link:focus .text {
-  color: var(--accent-color);
-}*/
-
 .element-border {
   background: var(--white-color);
   border: 1px solid #eeeeee;
