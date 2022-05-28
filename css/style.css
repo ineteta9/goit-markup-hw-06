@@ -1049,7 +1049,7 @@ overflow: hidden;
   height: 18px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-input:focus+.form-icon {
+.form-input:focus + .form-icon {
   fill: var(--accent-color);
 }
 .form-field.textarea {
@@ -1061,7 +1061,7 @@ overflow: hidden;
   align-items: center;
   resize: none;
   padding: 12px;
-  width: 448%;
+  width: 448px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -1094,7 +1094,7 @@ overflow: hidden;
   border-radius: 2px;
 }
 
-.label.agree {
+.label.acception {
   margin-bottom: 0;
   padding-left: 35px;
   font-weight: 400;
@@ -1102,7 +1102,8 @@ overflow: hidden;
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
-.form-input.visually-hidden:checked+.checkbox-icon {
+
+.form-input.visually-hidden:checked + .checkbox-icon {
   background-image: url(../images/checked.svg);
   background-size: contain;
   background-origin: border-box;
@@ -1118,8 +1119,8 @@ overflow: hidden;
   margin-left: 5px;
 }
 .form-field.checkbox button {
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  justify-content: center;
 }
 .btn-modal {
   cursor: pointer;
