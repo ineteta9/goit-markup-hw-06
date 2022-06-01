@@ -1102,6 +1102,7 @@ overflow: hidden;
 
 .form-field.checkbox > input {
   display: inline-block;
+  justify-content: center;
   margin-right: 8px;
   width: 16px;
   height: 15px;
