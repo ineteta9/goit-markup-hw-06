@@ -1100,6 +1100,10 @@ overflow: hidden;
   align-items: center;
   margin-bottom: 0;}
 
+.checkbox {
+  margin-bottom: 0;
+}
+
 .form-field.checkbox > input {
   display: inline-block;
   justify-content: center;
@@ -1107,6 +1111,7 @@ overflow: hidden;
   width: 16px;
   height: 15px;
   color: var(--title-text-color);
+  margin-bottom: 0;
 }
 /*.checkbox-icon {
   position: absolute;
